@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Adrija — CS student, Microsoft & Google enthusiast, skincare lover, and aspiring software engineer." />
+  <title>Adrija — Portfolio</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+  <div class="page-orbs">
+    <div class="orb orb-ms"></div><div class="orb orb-rose"></div>
+    <div class="orb orb-lav"></div><div class="orb orb-gold"></div>
+  </div>
+
+  <main style="position:relative;z-index:2">
+
+    <!-- ═══ HERO ═══════════════════════════════════════════════ -->
+    <section id="home-hero">
+      <div class="container">
+        <div class="hero-content">
+
+          <div class="hero-badge fade-in" style="--d:.1s">
+            <div class="ms-squares"><span></span><span></span><span></span><span></span></div>
+            &nbsp;Microsoft &amp; Google Lover · Skincare Geek · Future SWE
+          </div>
+
+          <h1 class="hero-name fade-in" style="--d:.2s">
+            <span class="line1">Hello, I'm</span>
+            <span class="line2">Adrija</span>
+          </h1>
+
+          <div class="hero-roles fade-in" style="--d:.35s">
+            I build&nbsp;
+            <span class="typed-wrap">
+              <span id="typedText"></span><span class="typed-cursor">|</span>
+            </span>
+          </div>
+
+          <p class="hero-tagline fade-in" style="--d:.5s">
+            A girl who loves code as much as she loves a good skincare routine.<br />
+            Obsessed with Microsoft Azure, Google Cloud, and clean architecture.
+          </p>
+
+          <div class="hero-actions fade-in" style="--d:.65s">
+            <a href="./pages/projects.html" class="btn btn-rose" id="hero-projects-btn">
+              <span>See My Projects</span>
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+            <a href="./pages/lab.html" class="btn btn-ms" id="hero-lab-btn">
+              <span>✦ 3D Lab</span>
+            </a>
+            <a href="./pages/contact.html" class="btn btn-ghost" id="hero-contact-btn">Say Hi 👋</a>
+          </div>
+
+          <div class="hero-stats fade-in" style="--d:.8s">
+            <div class="stat">
+              <span class="stat-num" data-count="5">0</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count="10">0</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">💖</span>
+              <span class="stat-label">Skincare Steps</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      </div>
+    </section>
+
+    <!-- ═══ MARQUEE ═══════════════════════════════════════════ -->
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <span class="marquee-item"><span class="m-dot m-ms"></span>HTML5</span>
+        <span class="marquee-item"><span class="m-dot m-rose"></span>CSS3</span>
+        <span class="marquee-item"><span class="m-dot m-lav"></span>JavaScript</span>
+        <span class="marquee-item"><span class="m-dot m-ms"></span>Azure</span>
+        <span class="marquee-item"><span class="m-dot m-rose"></span>React</span>
+        <span class="marquee-item"><span class="m-dot m-gold"></span>Google Cloud</span>
+        <span class="marquee-item"><span class="m-dot m-green"></span>Python</span>
+        <span class="marquee-item"><span class="m-dot m-lav"></span>Figma</span>
+        <span class="marquee-item"><span class="m-dot m-ms"></span>Microsoft 365</span>
+        <span class="marquee-item"><span class="m-dot m-rose"></span>Skincare ✨</span>
+        <span class="marquee-item"><span class="m-dot m-lav"></span>AI &amp; Prompt Eng.</span>
+        <span class="marquee-item"><span class="m-dot m-gold"></span>Node.js</span>
+        <!-- dup -->
+        <span class="marquee-item"><span class="m-dot m-ms"></span>HTML5</span>
+        <span class="marquee-item"><span class="m-dot m-rose"></span>CSS3</span>
+        <span class="marquee-item"><span class="m-dot m-lav"></span>JavaScript</span>
+        <span class="marquee-item"><span class="m-dot m-ms"></span>Azure</span>
+        <span class="marquee-item"><span class="m-dot m-rose"></span>React</span>
+        <span class="marquee-item"><span class="m-dot m-gold"></span>Google Cloud</span>
+        <span class="marquee-item"><span class="m-dot m-green"></span>Python</span>
+        <span class="marquee-item"><span class="m-dot m-lav"></span>Figma</span>
+        <span class="marquee-item"><span class="m-dot m-ms"></span>Microsoft 365</span>
+        <span class="marquee-item"><span class="m-dot m-rose"></span>Skincare ✨</span>
+        <span class="marquee-item"><span class="m-dot m-lav"></span>AI &amp; Prompt Eng.</span>
+        <span class="marquee-item"><span class="m-dot m-gold"></span>Node.js</span>
+      </div>
+    </div>
+
+    <!-- ═══ EXPLORE ════════════════════════════════════════════ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-eyebrow reveal" style="--d:0s;color:var(--rose)">explore.portfolio</div>
+        <h2 class="section-title reveal" style="--d:.1s">
+          Everything About <span class="rose-text">Adrija</span>
+        </h2>
+        <p class="section-sub reveal" style="--d:.2s">From code to cloud, from skincare to systems — this is my world.</p>
+
+        <div class="quick-nav-grid">
+          <a href="./pages/about.html" class="quick-card reveal" style="--d:.05s">
+            <div class="qc-icon qc-rose">👩‍💻</div>
+            <div class="qc-body"><h3>About Me</h3><p>A girl who loves tech, skincare, and building things that matter.</p></div>
+          </a>
+          <a href="./pages/skills.html" class="quick-card reveal" style="--d:.10s">
+            <div class="qc-icon qc-ms">⚡</div>
+            <div class="qc-body"><h3>Skills</h3><p>From Azure to moisturiser — my full tech and self-care stack.</p></div>
+          </a>
+          <a href="./pages/projects.html" class="quick-card reveal" style="--d:.15s">
+            <div class="qc-icon qc-lav">🚀</div>
+            <div class="qc-body"><h3>Projects</h3><p>Apps, tools, and experiments I've built with love (and coffee).</p></div>
+          </a>
+          <a href="./pages/lab.html" class="quick-card reveal" style="--d:.20s">
+            <div class="qc-icon qc-teal">✦</div>
+            <div class="qc-body"><h3>3D Lab</h3><p>An interactive WebGL particle universe — powered by your webcam.</p></div>
+          </a>
+          <a href="./pages/journey.html" class="quick-card reveal" style="--d:.25s">
+            <div class="qc-icon qc-gold">🗺️</div>
+            <div class="qc-body"><h3>My Journey</h3><p>Timeline of milestones on the road to Microsoft &amp; Google.</p></div>
+          </a>
+          <a href="./pages/contact.html" class="quick-card reveal" style="--d:.30s">
+            <div class="qc-icon qc-rose">💌</div>
+            <div class="qc-body"><h3>Contact</h3><p>Let's collaborate! I reply fast and love meeting new people.</p></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ TECH LOVES SECTION ════════════════════════════════ -->
+    <section class="section" style="background:rgba(244,63,142,0.02);border-top:1px solid rgba(244,63,142,0.07);border-bottom:1px solid rgba(244,63,142,0.07)">
+      <div class="container" style="text-align:center">
+        <div class="section-eyebrow reveal" style="--d:0s;justify-content:center;color:var(--rose)">dual.loyalties</div>
+        <h2 class="section-title reveal" style="--d:.1s">A True Believer in Both</h2>
+        <p class="italic-quote reveal" style="--d:.2s;margin:1rem auto;max-width:580px">
+          "Microsoft teaches me to build at scale. Google inspires me to build for everyone."
+        </p>
+
+        <div style="display:flex;gap:2rem;justify-content:center;flex-wrap:wrap;margin-top:2.5rem">
+          <!-- Microsoft -->
+          <div class="glass-card reveal" style="--d:.15s;padding:2rem;max-width:280px;border-top:3px solid var(--ms-blue);flex:1;min-width:220px">
+            <div class="ms-squares" style="width:28px;height:28px;margin:0 auto .75rem"><span></span><span></span><span></span><span></span></div>
+            <h3 style="font-family:var(--font-display);font-size:1.05rem;font-weight:700;margin-bottom:.5rem;color:var(--ms-blue)">Microsoft</h3>
+            <p style="font-size:.88rem;color:var(--text-muted);line-height:1.6">Azure, Teams, VS Code, Copilot — these tools live on my desktop every single day. Microsoft's vision of empowering every person is genuinely inspiring.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem;justify-content:center">
+              <span class="tag" style="border-color:rgba(0,120,212,0.3);color:var(--ms-blue)">Azure ☁️</span>
+              <span class="tag" style="border-color:rgba(0,120,212,0.3);color:var(--ms-blue)">VS Code</span>
+              <span class="tag" style="border-color:rgba(0,120,212,0.3);color:var(--ms-blue)">Copilot</span>
+            </div>
+          </div>
+          <!-- Love icon in middle -->
+          <div class="reveal" style="--d:.2s;display:flex;align-items:center;font-size:2rem">💖</div>
+          <!-- Google -->
+          <div class="glass-card reveal" style="--d:.25s;padding:2rem;max-width:280px;flex:1;min-width:220px;border-top:3px solid var(--rose)">
+            <div class="google-dots" style="justify-content:center;margin-bottom:.75rem"><span style="width:11px;height:11px"></span><span style="width:11px;height:11px"></span><span style="width:11px;height:11px"></span><span style="width:11px;height:11px"></span></div>
+            <h3 style="font-family:var(--font-display);font-size:1.05rem;font-weight:700;margin-bottom:.5rem">
+              <strong style="color:#4285F4">G</strong><strong style="color:#EA4335">o</strong><strong style="color:#FBBC05">o</strong><strong style="color:#4285F4">g</strong><strong style="color:#34A853">l</strong><strong style="color:#EA4335">e</strong>
+            </h3>
+            <p style="font-size:.88rem;color:var(--text-muted);line-height:1.6">Firebase, Google Cloud Run, Gemini AI — Google's developer tools are pure joy to use. The Search obsession started it all, and now I want to build things just like it.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem;justify-content:center">
+              <span class="tag" style="border-color:rgba(66,133,244,0.3);color:#4285F4">Firebase</span>
+              <span class="tag" style="border-color:rgba(234,67,53,0.3);color:#EA4335">Gemini AI</span>
+              <span class="tag" style="border-color:rgba(52,168,83,0.3);color:#34A853">Cloud Run</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SKINCARE CORNER ════════════════════════════════════ -->
+    <section class="section">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center">
+          <div>
+            <div class="section-eyebrow reveal" style="--d:0s;color:var(--rose)">self.care</div>
+            <h2 class="section-title reveal" style="--d:.1s">Code &amp; <span class="rose-text">Skincare</span></h2>
+            <p class="about-p reveal" style="--d:.2s">
+              Yes — I love skincare just as much as I love software. Both require patience, understanding ingredients (or APIs), and a commitment to the process. My 7-step routine is as important as my git workflow.
+            </p>
+            <blockquote class="about-quote reveal" style="--d:.3s">
+              "Good skin, like good code, is built one layer at a time."
+            </blockquote>
+            <div style="display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.25rem" class="reveal" style="--d:.4s">
+              <span class="tag">🌸 SPF always</span>
+              <span class="tag">💧 Hyaluronic Acid</span>
+              <span class="tag">✨ Vitamin C</span>
+              <span class="tag">🌙 Retinol nights</span>
+              <span class="tag">🫧 Double cleanse</span>
+              <span class="tag">💆 Gua Sha</span>
+            </div>
+          </div>
+          <div class="reveal" style="--d:.2s">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+              <div class="glass-card" style="padding:1.5rem;text-align:center;border-top:2px solid var(--rose)">
+                <div style="font-size:2.2rem;margin-bottom:.5rem">🌸</div>
+                <div style="font-size:.9rem;font-weight:700;color:var(--text);margin-bottom:.25rem">Skincare</div>
+                <div style="font-size:.78rem;color:var(--text-dim)">7-step AM/PM routine, never skip SPF</div>
+              </div>
+              <div class="glass-card" style="padding:1.5rem;text-align:center;border-top:2px solid var(--lavender)">
+                <div style="font-size:2.2rem;margin-bottom:.5rem">💜</div>
+                <div style="font-size:.9rem;font-weight:700;color:var(--text);margin-bottom:.25rem">Beauty Tech</div>
+                <div style="font-size:.78rem;color:var(--text-dim)">Building apps that combine beauty + AI</div>
+              </div>
+              <div class="glass-card" style="padding:1.5rem;text-align:center;border-top:2px solid var(--ms-blue)">
+                <div style="font-size:2.2rem;margin-bottom:.5rem">💻</div>
+                <div style="font-size:.9rem;font-weight:700;color:var(--text);margin-bottom:.25rem">Coding</div>
+                <div style="font-size:.78rem;color:var(--text-dim)">React, Azure, Python, Three.js WebGL</div>
+              </div>
+              <div class="glass-card" style="padding:1.5rem;text-align:center;border-top:2px solid var(--g-yellow)">
+                <div style="font-size:2.2rem;margin-bottom:.5rem">📖</div>
+                <div style="font-size:.9rem;font-weight:700;color:var(--text);margin-bottom:.25rem">Learning</div>
+                <div style="font-size:.78rem;color:var(--text-dim)">Always reading — tech blogs &amp; skincare science</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script type="module" src="./js/home.js"></script>
+</body>
+</html>
